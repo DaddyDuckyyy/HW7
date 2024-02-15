@@ -6,8 +6,7 @@ public class Task1 {
         while (depositAmount <= 2459000) {
             depositAmount += 15000;
             months++;
-            //В задании было сказано про проценты, но без уточнений, поэтому я оставила 12% годовых из прошлой задачи
-            //money += money * 0.01;
+            depositAmount += depositAmount * 0.01;
             System.out.printf("%-5d %d%n", months, depositAmount);
         }
     }
