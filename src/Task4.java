@@ -4,7 +4,7 @@ public class Task4 {
         int months = 0;
         System.out.println("Месяц Сумма вклада");
         while (depositAmount <= 12000000) {
-            depositAmount += depositAmount * 0.07;
+            depositAmount *= 1.07;
             months++;
             System.out.printf("%-5d %d%n", months, depositAmount);
         }
